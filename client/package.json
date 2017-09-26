@@ -1,0 +1,36 @@
+{
+  "name": "Kalicos",
+  "version": "1.0.0",
+  "description": "Kalicos is a location based non profits discovery platform",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "format": "prettier --write --single-quote --print-width=120 --parser=typescript --tab-width=2 \"src/**/*.{js,ts,tsx}\"",
+    "watch": "webpack --watch",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "tslint-config-airbnb": "^5.2.1",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "prettier": "^1.6.1",
+    "source-map-loader": "^0.2.1",
+    "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.5.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-plugin-prettier": "^1.1.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.5.2"
+  }
+}
