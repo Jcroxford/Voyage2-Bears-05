@@ -22,3 +22,6 @@ The data in [Kalicos](http://www.kalicos.com) will be moved from the google maps
 * Express
 * React
 * Node.js
+
+**Running Locally**
+for instructions on setting up the REST server locally, see the [server README](./server/README.md#Installing and Running Locally)

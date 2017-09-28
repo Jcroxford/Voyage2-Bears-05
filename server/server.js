@@ -31,10 +31,10 @@ if(isDevEnv) {
 // attach routes to app
 require('./routes')(app)
 
-const port = process.env.PORT
-app.listen(port, () => {
+const PORT = process.env.PORT
+app.listen(PORT, () => {
   if(isDevEnv) {
-    console.log(`server listening on http://localhost:${port}`)
+    console.log(`server listening on http://localhost:${PORT}`)
   }
 })
 
