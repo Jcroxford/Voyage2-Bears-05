@@ -33,14 +33,14 @@ To run this project locally you must have Node, npm, and MogoDB installed on you
 ```json
 {
   "test": {
-    "PORT": 3000,
-    "MONGODB_URI": "mongodb://localhost:27017/kaliosTest",
+    "PORT": 3001,
+    "MONGODB_URI": "mongodb://localhost:27017/KaliosTest",
     "JWT_SECRET": "pw123msiv4j6do1odsakk9d"
   },
   "development": {
     "PORT": 3000,
     "NODE_ENV": "development",
-    "MONGOGB_URI": "mongodb://localhost:27017/Kalios",
+    "MONGODB_URI": "mongodb://localhost:27017/Kalios",
     "JWT_SECRET": "jd5n6pfl2kdfnkl395jasdfn"
   },
   "production": {
@@ -52,7 +52,7 @@ To run this project locally you must have Node, npm, and MogoDB installed on you
 ## Testing
 to run test suite, run one of the test commands listed in the table above. 
 
-To add unit tests for future functions, tests folder has been set up to mimic server directory. This means if you create a controller file and need to write tests for that controller, the tests should be in `tets/controller/someController.test.js.
+To add unit tests for future functions, the `tests` folder has been set up to mimic server directory. This means if you create a controller file and need to write tests for that controller, the tests should be in `tests/controller/someController.test.js.`
 
 ## Deployment
 
@@ -63,13 +63,10 @@ more to come here eventually but the projects is not currently deployed for prod
 * [Express](http://expressjs.com/) - Server Library
 * [MongoDB](https://www.mongodb.com/) - Database
 * [React](https://facebook.github.io/react/) - Front End Framework
+* [Mongoose](http://mongoosejs.com/) - MongoDB ODM
 
 ## Authors
 
 * **Jesse Croxford** - [Jesse's Profile](https://github.com/Jcroxford)
 
 *add your information here everyone!*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
