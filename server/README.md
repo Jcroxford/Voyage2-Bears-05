@@ -14,10 +14,12 @@ To run this project locally you must have Node, npm, and MogoDB installed on you
 
 ### Installing and Running Locally
 
-1. Clone the repo from the root directory and switch to the server directory `cd Voyage2-Bears-05/server` 
-2. run `npm install` to gather the necessary packages.
-3. This project requires a local config.json file to provide private `process.env` variables for testing and development. (see below for example). This file should be stored in `server/config/config.json`
-4. Make sure the projects is installed correctly by starting the server `npm start` and visiting http://localhost:3000/api/hello If installed correctly, you should receive a welcome message
+```
+cd server
+npm install
+cp config/config.example.json config/config.json
+npm start
+```
 
 ### scripts
 | Scripts              | Use                                           |
@@ -28,26 +30,6 @@ To run this project locally you must have Node, npm, and MogoDB installed on you
 | `npm run test:watch` | run persistent mocha test suite               |
 | `npm run lint`       | run eslint across server files                |
 | `npm run lint:fix`   | fixes lint errors across files automatically  |
-
-**Example config.json File (you can copy paste this file diretly to get started)**
-```json
-{
-  "test": {
-    "PORT": 3001,
-    "MONGODB_URI": "mongodb://localhost:27017/KaliosTest",
-    "JWT_SECRET": "pw123msiv4j6do1odsakk9d"
-  },
-  "development": {
-    "PORT": 3000,
-    "NODE_ENV": "development",
-    "MONGODB_URI": "mongodb://localhost:27017/Kalios",
-    "JWT_SECRET": "jd5n6pfl2kdfnkl395jasdfn"
-  },
-  "production": {
-    "JWT_SECRET": "akluasd8n2345nakjndsf"
-  }
-}
-```
 
 ## Testing
 to run test suite, run one of the test commands listed in the table above. 
