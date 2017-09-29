@@ -1,5 +1,6 @@
 const helloController = require('../controllers/helloController')
 const userController  = require('../controllers/userController')
+const organizationController  = require('../controllers/organizationController')
 
 module.exports = (app) => {
   app.get('/hello', helloController.hello)
@@ -8,4 +9,5 @@ module.exports = (app) => {
   // user routes
   // ==================================================
   app.post('/api/user', userController.create)
+  app.post('/api/organization', organizationController.create)
 }
